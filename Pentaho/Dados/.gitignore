@@ -1,0 +1,6 @@
+# Ignorar o arquivo de dados pesado do Kaggle
+*.csv
+
+# Ignorar arquivos de log e configurações locais do Pentaho
+*.log
+.kettle/
