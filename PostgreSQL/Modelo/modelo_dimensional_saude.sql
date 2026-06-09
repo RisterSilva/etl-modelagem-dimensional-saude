@@ -236,6 +236,9 @@ ON dh.nome_hospital = stg.hospital
 JOIN dim_seguradora AS ds
 On ds.nome_seguradora = stg.seguradora;
 
+-- Ajustar nome da coluna resultado_do_teste 
 
+ALTER TABLE fato_atendimento
+RENAME COLUMN resultado_do_teste TO resultado_exame
 
 
