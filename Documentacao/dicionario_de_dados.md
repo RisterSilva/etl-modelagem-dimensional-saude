@@ -75,7 +75,7 @@ Armazena as operadoras de seguro de saúde.
 
 Tabela central do modelo. Cada registro representa um evento de internação hospitalar.
 
-> 📝 **Decisão de modelagem:** Os campos `condicao_clinica`, `medicamento` e `resultado_do_teste` foram mantidos na tabela fato — e não em dimensões separadas — por apresentarem baixa complexidade e escopo simplificado no contexto deste projeto. Em um modelo de produção, poderiam ser candidatos a dimensões próprias dependendo das necessidades analíticas do negócio.
+> 📝 **Decisão de modelagem:** Os campos `condicao_clinica`, `medicamento` e `resultado_exame` foram mantidos na tabela fato — e não em dimensões separadas — por apresentarem baixa complexidade e escopo simplificado no contexto deste projeto. Em um modelo de produção, poderiam ser candidatos a dimensões próprias dependendo das necessidades analíticas do negócio.
 
 | Campo | Tipo | Descrição |
 |---|---|---|
@@ -91,7 +91,7 @@ Tabela central do modelo. Cada registro representa um evento de internação hos
 | `tipo_admissao` | VARCHAR(25) | Circunstância da admissão: `Emergency`, `Elective` ou `Urgent` |
 | `data_alta` | DATE | Data de alta do paciente |
 | `medicamento` | VARCHAR(30) | Medicamento prescrito ou administrado durante a internação (ex: `Aspirin`, `Paracetamol`, `Lipitor`) |
-| `resultado_do_teste` | VARCHAR(50) | Resultado do exame realizado durante a internação: `Normal`, `Abnormal` ou `Inconclusive` |
+| `resultado_exame` | VARCHAR(50) | Resultado do exame realizado durante a internação: `Normal`, `Abnormal` ou `Inconclusive` |
 
 ---
 
